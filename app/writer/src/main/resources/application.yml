@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        default_schema: delivery_service
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        show_sql: true
+        use_sql_comments: true
+        format_sql: true
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://app_db:5432/routeservicedb
+    username: postgres
+    password: postgres
+server:
+  port: 8080
+
